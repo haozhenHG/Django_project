@@ -4,7 +4,7 @@
 
 ![image-20240812174227865](cloudnoteProject/image-20240812174227865.png)
 
-![image-20240812174235297](cloudnoteProject\image-20240812174235297.png)
+![image-20240812174235297](cloudnoteProject/image-20240812174235297.png)
 
  
 
@@ -12,23 +12,23 @@
 2. 创建应用        python manage.py startapp user  【注意 python3 没有效果】
 3. 创建数据库tedu_note
 
-![image-20240812203613405](E:\pythonProject\mysite\cloudnoteProject\image-20240812203613405.png)
+![image-20240812203613405](cloudnoteProject/image-20240812203613405.png)
 
 4. 配置settings.py
 
-![image-20240813103957828](E:\pythonProject\mysite\cloudnoteProject\image-20240813103957828.png)
+![image-20240813103957828](cloudnoteProject/image-20240813103957828.png)
 
-![image-20240813104027117](E:\pythonProject\mysite\cloudnoteProject\image-20240813104027117.png)
-
-
+![image-20240813104027117](cloudnoteProject/image-20240813104027117.png)
 
 
 
-![image-20240813104042595](E:\pythonProject\mysite\cloudnoteProject\image-20240813104042595.png)
+
+
+![image-20240813104042595](cloudnoteProject/image-20240813104042595.png)
 
 5. 启动项目 	python manage.py runserver   【注意  python3 manage.py runserver没有效果】
 
-![image-20240812203805554](E:\pythonProject\mysite\cloudnoteProject\image-20240812203805554.png)
+![image-20240812203805554](cloudnoteProject/image-20240812203805554.png)
 
 # 1. 注册
 
@@ -54,15 +54,15 @@ class User(models.Model):
 
 > python manage.py migrate
 
-![image-20240813105003152](E:\pythonProject\mysite\cloudnoteProject\image-20240813105003152.png)
+![image-20240813105003152](cloudnoteProject/image-20240813105003152.png)
 
-![image-20240813105015990](E:\pythonProject\mysite\cloudnoteProject\image-20240813105015990.png)
+![image-20240813105015990](cloudnoteProject/image-20240813105015990.png)
 
 ##  1.用户注册
 
 
 
-![image-20240813105113444](E:\pythonProject\mysite\cloudnoteProject\image-20240813105113444.png)
+![image-20240813105113444](cloudnoteProject/image-20240813105113444.png)
 
 
 
@@ -143,13 +143,13 @@ def reg_view(request):
         return HttpResponse('注册成功！')
 ```
 
-![image-20240813112713782](E:\pythonProject\mysite\cloudnoteProject\image-20240813112713782.png)
+![image-20240813112713782](cloudnoteProject/image-20240813112713782.png)
 
 
 
 ###  唯一索引引发的重复问题  try
 
-![image-20240813113527409](E:\pythonProject\mysite\cloudnoteProject\image-20240813113527409.png)
+![image-20240813113527409](cloudnoteProject/image-20240813113527409.png)
 
 - 解决
 
@@ -182,13 +182,13 @@ m.hexdigest()  # hexdigest 理解为16紧进制摘要
 # 若是直接update  相当于两次明文的拼接 
 ```
 
-![image-20240813112152426](E:\pythonProject\mysite\cloudnoteProject\image-20240813112152426.png)
+![image-20240813112152426](cloudnoteProject/image-20240813112152426.png)
 
-![image-20240813112221813](E:\pythonProject\mysite\cloudnoteProject\image-20240813112221813.png)
+![image-20240813112221813](cloudnoteProject/image-20240813112221813.png)
 
 
 
-![image-20240813112341459](E:\pythonProject\mysite\cloudnoteProject\image-20240813112341459.png)
+![image-20240813112341459](cloudnoteProject/image-20240813112341459.png)
 
 ### 免登录seesion
 
@@ -201,7 +201,7 @@ request.POST['uid'] = user.id
 
 ##  2. 用户登录
 
-![image-20240813121753827](E:\pythonProject\mysite\cloudnoteProject\image-20240813121753827.png)
+![image-20240813121753827](cloudnoteProject/image-20240813121753827.png)
 
 - 代码
 
@@ -243,7 +243,7 @@ def login_view(request):
 
 ###  会话状态时间  + cookie
 
-![image-20240813123322438](E:\pythonProject\mysite\cloudnoteProject\image-20240813123322438.png)
+![image-20240813123322438](cloudnoteProject/image-20240813123322438.png)
 
 1. 记住用户名  免登录三天
 
@@ -260,39 +260,39 @@ if 'remember' in request.POST:
 return resp
 ```
 
-![image-20240813124343406](E:\pythonProject\mysite\cloudnoteProject\image-20240813124343406.png)
+![image-20240813124343406](cloudnoteProject/image-20240813124343406.png)
 
 1. 不记住    一天  就是session
 
-![image-20240813124526610](E:\pythonProject\mysite\cloudnoteProject\image-20240813124526610.png)
+![image-20240813124526610](cloudnoteProject/image-20240813124526610.png)
 
 ### 用户登录状态校验
 
-![image-20240813145421716](E:\pythonProject\mysite\cloudnoteProject\image-20240813145421716.png)
+![image-20240813145421716](cloudnoteProject/image-20240813145421716.png)
 
-![image-20240813145903999](E:\pythonProject\mysite\cloudnoteProject\image-20240813145903999.png)
+![image-20240813145903999](cloudnoteProject/image-20240813145903999.png)
 
 
 
 # 3. 网站首页
 
-![image-20240813150118086](E:\pythonProject\mysite\cloudnoteProject\image-20240813150118086.png)
+![image-20240813150118086](cloudnoteProject/image-20240813150118086.png)
 
 #  4. 退出登录
 
-![image-20240813153015677](E:\pythonProject\mysite\cloudnoteProject\image-20240813153015677.png)
+![image-20240813153015677](cloudnoteProject/image-20240813153015677.png)
 
 
 
 #  5. 笔记模块  列表页
 
-![image-20240813153939425](E:\pythonProject\mysite\cloudnoteProject\image-20240813153939425.png)
+![image-20240813153939425](cloudnoteProject/image-20240813153939425.png)
 
 
 
 ###  添加笔记
 
-![image-20240813154132955](E:\pythonProject\mysite\cloudnoteProject\image-20240813154132955.png)
+![image-20240813154132955](cloudnoteProject/image-20240813154132955.png)
 
 
 
