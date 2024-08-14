@@ -2,7 +2,7 @@
 
 #  - 配置
 
-![image-20240812174227865](E:\pythonProject\mysite\cloudnoteProject\image-20240812174227865.png)
+![image-20240812174227865](cloudnoteProject\image-20240812174227865.png)
 
 ![image-20240812174235297](E:\pythonProject\mysite\cloudnoteProject\image-20240812174235297.png)
 
